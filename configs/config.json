@@ -1,0 +1,37 @@
+{
+    "model" : {
+        "image_width":            100,
+        "image_height":           124,
+        "n_channels" :          1,
+        "type":                 "3D",
+        "labels":               [0, 1],
+        "train_val_split":      0.8,
+        "augmentation":         "False",
+        "learning_rate":        1e-4,
+        "epochs":               100,
+        "steps_per_epoch":      20,
+        "loss_function":        "binary_crossentropy",
+        "load_weights":         "False",
+        "load_weights_name":    "./weights/fetal_whole_brain_segmentation.h5",
+        "list": "./cohort/list.csv"
+    },
+    "split":{
+      "random_seed": 12
+    },
+    "train": {
+        "train_image_folder":   "",
+        "train_annot_folder":   " ",
+
+        "train_times":          8,
+        "pretrained_weights":   "False",
+        "batch_size":           4,
+
+        "saved_weights_name":   "gdrive/My Drive/nathan/Fetal-Brain-Segmentation-3D-UNET-master/weights/fetal_whole_brain_segmentation.h5"
+    },
+
+    "valid": {
+        "valid_image_folder":   "",
+        "valid_annot_folder":   "",
+        "valid_times":          20
+    }
+}
