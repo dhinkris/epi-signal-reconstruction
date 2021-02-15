@@ -11,7 +11,6 @@ import pandas as pd
 
 import tensorflow as tf
 from tensorflow.keras import optimizers
-from tensorflow.keras.utils import multi_gpu_model
 from tensorflow.keras.callbacks import ModelCheckpoint, TensorBoard, LambdaCallback
 
 from utils import metrics
